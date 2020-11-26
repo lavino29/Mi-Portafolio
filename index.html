@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/normalize.css" />
+    
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <title>Jose Juarez</title>
+  </head>
+  <body>
+    <header>
+      <nav class="main_header" id="main_header">
+        <ul class="main_header--ul">
+          <li class="main_header--li">
+            <p>volver hacia</p>
+            <a href="index.html"">INICIO</a>
+          </li>
+          <p>Proyectos</p>
+          <li class="main_header--li">
+            <a class="parrafo" id="menu1">Simon Dice</a>
+          </li>
+          <li class="main_header--li">
+            <a class="parrafo" id="menu2"  >Piedra papel o tijera</a>
+          </li>
+          <li class="main_header--li">
+            <a class="parrafo" id="menu3" >Red social NodeJs</a>
+          </li>
+          <li class="main_header--li">
+            <a class="parrafo" id="menu4" >Reloj-Analogico APP</a>
+          </li>
+          <li class="main_header--li">
+            <a class="parrafo" href="about.html">SOBRE MI</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header--barra" id="header_barra"></div>
+      <div class="container_header">
+        <div class="button_menu" id="button_menu">
+          <span class="barra_menu"></span>
+          <span class="barra_menu barra_menu--top"></span>
+          <span class="barra_menu barra_menu--bot"></span>
+
+        </div>
+        <span class="titulo">JOSE JUAREZ | Programador WEB</span>
+        <div class="about">
+          
+        <span class="about--barra"></span>
+        
+        <a class="about--a" href="about.html"><span class="about--titulo">SOBRE MI</span></a>
+      </div>
+      </div>
+    </header>
+    <main class="main_container">
+        <div class="slider_menu">
+            <ul class="slider_menu--ul" id="">
+                <li class="slider_menu--li"><a id="slide1"><span></span></a></li>
+                <li class="slider_menu--li"><a  id="slide2"><span></span></a></li>
+                <li class="slider_menu--li"><a  id="slide3"><span ></span></a></li>
+                <li class="slider_menu--li"><a id="slide4"><span></span></a></li>
+            </ul>
+        </div>
+        <div class="proyec--main">
+          <div id="proyec">
+            <div class="main_proyectos" id="proyecto1">
+              <div class="main_proyectos--imagen">
+                  <img id="image_1" src="./img/classic-simon-juego.jpg" alt="">
+              </div>
+              <div class="main_proyectos--informacion">
+
+                <div class="info1">
+                  <span>Juego | JS | Frond End</span>
+                  <h1>Simon Dice</h1>
+               <div class="button_view">  <a href="https://github.com/lavino29/Simon-Says"> <input class="button__view-main" type="button" value="VER PROYECTO" ></a></div>
+                  
+                </div>
+              </div>
+              
+          </div>
+          <div class="main_proyectos" id="proyecto2">
+            <div class="main_proyectos--imagen">
+                <img id="image_1" src="./img/piedra.jpg" alt="">
+            </div>
+            <div class="main_proyectos--informacion green--active">
+              <div class="info1">
+                <span>Juego | JS | Frond End</span>
+                <h1>Piedra Papel o Tijera</h1>
+                
+                <div class="button_view"><input class="button__view-main" type="button" value="VER PROYECTO"></div>
+              </div>
+            </div>
+            
+        </div>
+        <div class="main_proyectos" id="proyecto3">
+          <div class="main_proyectos--imagen">
+              <img id="image_1" src="./img/red.jpg" alt="">
+          </div>
+          <div class="main_proyectos--informacion purple--active">
+            <div class="info1">
+              <span>APP | NodeJs | Back End</span>
+              <h1>Red social - Nodejs</h1>
+              <div class="button_view"><input class="button__view-main" type="button" value="VER PROYECTO"></div>
+            </div>
+            
+          </div>
+          
+      </div>
+      <div class="main_proyectos" id="proyecto4">
+        <div class="main_proyectos--imagen">
+            <img id="image_1" src="./img/reloj.jpg" alt="">
+        </div>
+        <div class="main_proyectos--informacion gray--active">
+          <div class="info1">
+            <span>APP | CSS | Front End</span>
+            <h1>Reloj-Analogico - CSS</h1>
+            <div class="button_view"><input class="button__view-main" type="button" value="VER PROYECTO"></div>
+          </div>
+          
+        </div>
+        
+    </div>
+          </div>
+
+        </div>
+        
+      
+    </main>
+    <div class="main--loader">
+      <div class="modal--Loader" id="modal--Loader">
+        <div class="container--loader container1" id="container1"></div>
+        <h1 data-text="Jose Juarez Web" class="titulo--loader">Jose Juarez Web</h1>
+        <div class="container--loader container2" id="container2"></div>
+      </div>
+    </div>
+    
+    <script src="./js/app.js"></script>
+  </body>
+</html>

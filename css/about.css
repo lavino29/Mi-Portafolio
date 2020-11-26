@@ -1,0 +1,48 @@
+.main_about{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: aboslute;
+}
+.sobre_mi{
+    width: 50%;
+   height: 100%;
+    background: #1B1F22;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.sobre_mi h1{
+    color: #e44c24;
+    font-size: 45px;
+}
+.sobre_mi h2{
+  font-weight: 300;
+}.sobre_mi p{
+    font-size: 19px;
+    font-style: italic;
+}
+.sobre_mi a{
+    font-size: 20px;
+    margin-left: 5px;
+}
+.img{
+    width: 50%;
+    height: 40vh;
+  
+}
+.img img{
+    max-height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.sobre_mi-container{
+    width: 80%;
+    margin: 0 auto 25px auto;
+
+}.about--a{
+    width: 250px !important;
+    font-size: 15px;
+}
