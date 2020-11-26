@@ -48,11 +48,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
       mainloader.style.display = "none";
     }, 500);
   }, 3000);
-
- 
 });
-
-
 
 button_menu.addEventListener("click", () => {
   button_menu.children[0].classList.add("button--is-active");

@@ -5,9 +5,8 @@
 html {
   scroll-behavior: smooth;
 }
-body{
+body {
   overscroll-behavior: none;
- 
 }
 img {
   max-width: 100%;
@@ -23,27 +22,24 @@ img {
 /*----------------*/
 
 .button_menu {
-    
-    position: relative;
+  position: relative;
   width: 70px;
   height: 70px;
   background: var(--orange-color);
   z-index: 100;
   display: flex;
-  
+
   justify-content: space-evenly;
   align-items: center;
-  
-}.button_menu:hover{
-    cursor: pointer;
 }
-.button_menu:hover .barra_menu--top{
-    margin-bottom: 1.5rem;
-
+.button_menu:hover {
+  cursor: pointer;
 }
-.button_menu:hover .barra_menu--bot{
-    margin-top: 1.5rem;
-
+.button_menu:hover .barra_menu--top {
+  margin-bottom: 1.5rem;
+}
+.button_menu:hover .barra_menu--bot {
+  margin-top: 1.5rem;
 }
 .barra_menu {
   position: absolute;
@@ -55,11 +51,11 @@ img {
   transition: all 0.3s ease-in;
 }
 .barra_menu--bot {
-    margin-top: 1rem;
-  }
-  .barra_menu--top {
-    margin-bottom: 1rem;
-  }
+  margin-top: 1rem;
+}
+.barra_menu--top {
+  margin-bottom: 1rem;
+}
 .container_header {
   margin: 0;
   position: fixed;
@@ -71,8 +67,8 @@ img {
   align-items: center;
 }
 .about {
-    overflow: hidden;
-    position: relative;
+  overflow: hidden;
+  position: relative;
   right: 0;
   z-index: 101;
   text-align: center;
@@ -82,41 +78,39 @@ img {
   height: 45px;
   border: 0.5px solid white;
   margin-right: 1.5rem;
- 
-}.about--barra{
-    display: block;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    background-color: white;
-    width: 110px;
-    height: 45px;
-    
+}
+.about--barra {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  background-color: white;
+  width: 110px;
+  height: 45px;
+
   transform: translateX(-100%);
   transition: transform 0.5s;
 }
-.about:hover .about--barra{
-    transform: translateX(0%);
-    
+.about:hover .about--barra {
+  transform: translateX(0%);
 }
-.about:hover{
-    
-    cursor: pointer;
-}a{
-    text-decoration: none;
-    color: inherit;
-  
+.about:hover {
+  cursor: pointer;
 }
-.titulo{
-    font-family: "Poppins", sans-serif;
-    color: rgba(255, 255, 255, 0.8);
-    margin-left: 80px;
-    font-size: 16PX;
-    position: absolute;
-    right: 150px;
-    
-}.parrafo:hover{
- cursor: pointer;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.titulo {
+  font-family: "Poppins", sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 80px;
+  font-size: 16px;
+  position: absolute;
+  right: 150px;
+}
+.parrafo:hover {
+  cursor: pointer;
 }
 .main_header {
   font-family: "Big Shoulders Inline Display", cursive;
@@ -137,7 +131,6 @@ img {
   list-style: none;
   text-align: center;
   color: white;
-
   opacity: 0;
   transition: all 1s ease;
 }
@@ -316,7 +309,7 @@ img {
   height: 17%;
 }
 .button__view-main {
-text-decoration: none;
+  text-decoration: none;
   outline: none;
   background: none;
   color: #fbfcfc;
@@ -325,13 +318,14 @@ text-decoration: none;
   transition: padding 0.5s;
 }
 .button__view-main:hover {
-    
-    padding: 50px 100px;
+  padding: 50px 100px;
 }
 /* -------------- */
 /* LOADER */
 /* -------------- */
 .main--loader {
+  top: 0px;
+  position: absolute;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -340,7 +334,7 @@ text-decoration: none;
   overflow: hidden;
 }
 .modal--Loader {
-    overflow: hidden;
+  overflow: hidden;
   position: absolute;
   z-index: 10000000;
   width: 100%;
@@ -350,6 +344,7 @@ text-decoration: none;
   justify-content: center;
   align-items: center;
   transition: all 1s;
+  
 }
 .container--loader {
   transition: all 1s;
