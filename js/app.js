@@ -9,6 +9,7 @@ const slide1 = document.querySelector("#slide1");
 const slide2 = document.querySelector("#slide2");
 const slide3 = document.querySelector("#slide3");
 const slide4 = document.querySelector("#slide4");
+const slide5 = document.querySelector("#slide5");
 const menu1 = document.querySelector("#menu1");
 const menu2 = document.querySelector("#menu2");
 const menu3 = document.querySelector("#menu3");
@@ -36,6 +37,8 @@ about_titulo.addEventListener("mouseover", () => {
   }
   if (window.location.hash == "#proyecto4") {
     about_titulo.style.color = "#616A6B";
+  }  if (window.location.hash == "#proyecto5") {
+    about_titulo.style.color = "#1490EC";
   }
 });
 about_titulo.addEventListener("mouseout", () => {
@@ -89,11 +92,20 @@ window.addEventListener("DOMContentLoaded", (e) => {
     button_menu.style.background = "#616A6B";
     main_header.style.background = "#616A6B";
     header_barra.style.background = "#616A6B";
-    slide3.children[0].style.background = "white";
+    slide4.children[0].style.background = "white";
     if (document.referrer.includes("about") == false) {
       proyecto_1.style.transform = `translateY(-300%)`;
     }
+   
   }
+  if (window.location.hash == "#proyecto5") {
+    button_menu.style.background = "#1490EC";
+    main_header.style.background = "#1490EC";
+    header_barra.style.background = "#1490EC";
+    slide5.children[0].style.background = "white";
+    if (document.referrer.includes("about") == false) {
+      proyecto_1.style.transform = `translateY(-400%)`;
+    }}
 });
 slide1.addEventListener("click", (e) => {
   e.preventDefault();
@@ -145,6 +157,19 @@ slide4.addEventListener("click", (e) => {
   slide4.children[0].style.background = "white";
   setTimeout(() => {
     window.location.hash = "proyecto4";
+  }, 500);
+});
+slide5.addEventListener("click", (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  proyecto_1.style.transform = `translateY(-400%)`;
+  button_menu.style.background = "##1490EC ";
+  main_header.style.background = "##1490EC ";
+  header_barra.style.background = "##1490EC ";
+  deleteSelectSlider();
+  slide5.children[0].style.background = "white";
+  setTimeout(() => {
+    window.location.hash = "proyecto5";
   }, 500);
 });
 menu1.addEventListener("click", (e) => {
@@ -225,6 +250,7 @@ const deleteSelectSlider = () => {
   slide2.children[0].style.background = "none";
   slide3.children[0].style.background = "none";
   slide4.children[0].style.background = "none";
+  slide5.children[0].style.background = "none";
 };
 const coloresDinamico = () => {
   if (proyecto_1.style.transform == "translateY(0%)") {
@@ -265,14 +291,24 @@ const coloresDinamico = () => {
     }, 500);
     slide4.children[0].style.background = "white";
   }
+  else if (proyecto_1.style.transform == "translateY(-400%)") {
+    button_menu.style.background = "#1490EC";
+    main_header.style.background = "#1490EC";
+    header_barra.style.background = "#1490EC";
+    deleteSelectSlider();
+    setTimeout(() => {
+      window.location.hash = "proyecto5";
+    }, 500);
+    slide5.children[0].style.background = "white";
+  }
 };
 const subir = () => {
   flag = false;
   a += 100;
-  if (a > 300) {
+  if (a > 400) {
     proyecto_1.style.transform = `translateY(0%)`;
     a = 0;
-  } else if (a <= 300) {
+  } else if (a <= 400) {
     proyecto_1.style.transform = `translateY(-${a}%)`;
   }
 
@@ -285,10 +321,10 @@ const bajar = () => {
   a -= 100;
 
   if (a == -100) {
-    proyecto_1.style.transform = `translateY(-300%)`;
+    proyecto_1.style.transform = `translateY(-400%)`;
 
-    a = 300;
-  } else if (a <= 300) {
+    a = 400;
+  } else if (a <= 400) {
     proyecto_1.style.transform = `translateY(-${a}%)`;
   }
 

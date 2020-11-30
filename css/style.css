@@ -192,6 +192,8 @@ a {
 }
 .gray--active {
   background: var(--gray-color) !important;
+}.cyan--active{
+  background: #1490EC !important;
 }
 .modal--Loader--active {
   height: 80vh !important;
